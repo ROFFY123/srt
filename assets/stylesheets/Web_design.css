@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mycontainer{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header,aside,article,nav,footer{
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color:teal;
+  color: white;
+  font-size: bold;
+  position: fixed;
+  top: 0%;
+}
+
+#main{
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+nav{
+  /* flex: 0 0 4rem; */
+  background-color: rgb(83, 60, 30);
+  color: white;
+  order: 2;
+  height: 60px;
+  position: fixed;
+  bottom: 90px;
+  width: 100%;
+}
+
+aside{
+  /* flex: 0 0 4rem; */
+  background-color: rgb(10, 16, 17);
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 10vh;
+}
+
+article{
+  flex: 1 1 auto;
+}
+
+.my-social{
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  list-style: none;
+} 
+
+a{
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  /* flex: 0 0 auto; */
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background-color: rgb(19, 7, 7);
+  color: white;
+  /* position: absolute; */
+}
+
+@media screen and (min-width: 576px) {
+  #main{
+    display: flex;
+    flex-direction: row;
+  }
+  header{
+    font-size: 3rem;
+  }
+  footer{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width:576px){
+  header{
+      font-size: 2rem; 
+      color: gold;
+  }
+}
+
+@media screen and (min-width:920px){
+}
+header{
+        font-size: 40px;
+        color: maroon;
+    }
+    #main{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    article{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    @media screen and (min-width:576px){
+      header{
+          font-size: 2rem; 
+          color: gold;
+      }
+  }
+  @media screen and (min-width:920px){
+  }
+
+  
+@media screen and (min-width:576px){
+    header{
+        font-size: 2rem; 
+        color: gold;
+    }
+}
+
+@media screen and (min-width:920px){
+}
+header{
+        font-size: 40px;
+        color: maroon;
+    }
+    #main{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    article{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+@media screen and (min-width:576px){
+    header{
+        font-size: 2rem; 
+        color: gold;
+    }
+}
+@media screen and (min-width:920px){
+header{
+        font-size: 3rem;
+        color: aquamarine;
+    }
+    #main{
+       
+        display: flex;
+        flex-direction: row;
+        
+    }
+    article{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+nav{
+        right: 0;
+        height: 83%;
+        width:10vw ;
+    }
+
+    aside{
+    left: 0;
+    height: 82.5%;
+    width:10vw ;
+    
+    }
+.my-social{
+        flex-direction: column;
+        width: 100px;
+        align-items: center;
+        gap: 60px;
+        height: 100%;   
+    }
+    .nav-bar{
+       height: 100%;
+       flex-direction: column;
+       width: 100px;
+       align-items: center;
+       gap: 60px;
+    }
+  }

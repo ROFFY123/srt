@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  flex:0 0 10vh;
+  display: flex;
+  justify-content: center;
+  background-color:navy;
+  align-items: center;
+  color: beige;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+header,footer,article,aside,nav{
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+header{
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+}
+
+footer{
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:0 0 10vh;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+
+}
+
+aside{
+  flex: 0 0 10vw;
+  background-color: darkmagenta;
+  color: white;
+  position: fixed;
+  bottom: 50px;
+  width: 100%;   
+}
+
+.image-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my-image{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.my-social,.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+a{
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+article{
+  flex: 1 1 auto;
+
+}
+
+nav{
+  flex: 0 0 10vw;
+  background-color: rgb(42, 37, 42);
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin-top: 60px;
+}
+
+.video{
+  width: 350px;
+  height: 300px;
+}
+.myvideo{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+ @media screen and (min-width:576px){
+  #main{
+    display: flex;
+    flex-direction: row; 
+    
+} 
+article{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+nav{
+  right: 0;
+  height: 83%;
+  width:10vw ;
+}
+
+aside{
+left: 0;
+height: 82.5%;
+width:10vw ;
+
+}
+
+.my-social{
+  flex-direction: column;
+  width: 100px;
+  align-items: center;
+  gap: 60px;
+  height: 100%;   
+}
+
+.nav-bar{
+ height: 100%;
+ flex-direction: column;
+ width: 100px;
+ align-items: center;
+ gap: 60px;
+}
+
+th,td{
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+}
+
+.table-container{
+  overflow: auto;
+  margin-bottom: 100px;
+}
+
+table{
+  width: 100%;
+  border: 1px solid gray;
+}
+
+th,td{
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+tr:nth-child(even){
+  background-color: rgb(167, 158, 141);
+}
+
+tr:hover{
+  background-color: rgba(175, 61, 0, 0.843);
+}
+ 

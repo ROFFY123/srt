@@ -1,0 +1,37 @@
+.parent {
+  display: grid;
+  justify-content: space-around;
+  gap: 20px;
+  
+} 
+
+.children_one{
+  background-color: brown;
+  width: 500px;
+  height: 100px;
+ 
+}
+
+.children_two{
+  background-color: yellow;
+  width: 500px;
+  height: 100px;
+}
+
+.children_three{
+  background-color: pink;
+  width: 500px;
+  height: 100px;
+}
+
+.children_four{
+  background-color: purple;
+  width: 500px;
+  height: 100px;
+}
+
+.children_five{
+  background-color: blue;
+  width: 500px;
+  height: 100px;
+}
